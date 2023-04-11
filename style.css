@@ -1,32 +1,63 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .set {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    margin: 0px;
+    border: black solid 1px;
+  }
+  
+  /* On screens that are 992px wide or less, go from four columns to two columns */
+  @media screen and (max-width: 992px) {
+    .set {
+      width: 50%;
+    }
+
+    #MyTitle{
+        width: 50%;
+    }
+
+    #MyFoot{
+        width: 50%;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .set {
+      width: 100%;
+    }
+
+    #MyTitle{
+        width: 100%;
+    }
+
+    #MyFoot{
+        width: 100%;
+    }
+  }
+
+
 #Adiv{
     background-color: green;
-    border: black solid 2px;
-    padding: 5px;
-    margin: 10px;
-    
 }
 
 #Bdiv{
     background-color: grey;
-    border: black solid 2px;
-    padding: 5px;
-    margin: 10px;
 }
-
 
 #Cdiv{
     background-color: dodgerblue;
-    border: black solid 2px;
-    padding: 5px;
-    margin: 10px;
 }
 
 #Ddiv{
     background-color: violet;
-    border: black solid 2px;
-    padding: 5px;
-    margin: 10px;
 }
+
 
 li{
     width: 20px;
@@ -34,7 +65,7 @@ li{
     background-color: tan;
     border: black solid 2px;
     padding-left: 5px;
-    padding-right: 30px;
+    padding-right: 60px;
     margin: 5px;
 }
 
@@ -46,11 +77,14 @@ ul{
    list-style-type: none; 
 }
 
+
 #MyTitle{
     background-color: brown;
     border: black solid 2px;
     padding: 5px;
-    margin: 10px;
+    margin: 0px;
+    margin-bottom: 10px;
+    width: 100%;
 }
 
 #MyFoot{
@@ -58,13 +92,6 @@ ul{
     border: black solid 2px;
     padding: 5px;
     margin: 10px;
-}
-
-/* Desktop */
-@media screen and (max-width: 2000px) {
-    #Adiv {float: left;}
-    #Bdiv {float: left;}
-    #Cdiv {float: left;}
-    #Ddiv {float: left;}
-
+    float: left;
+    width: 100%;
 }
