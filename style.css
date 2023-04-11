@@ -1,0 +1,70 @@
+#Adiv{
+    background-color: green;
+    border: black solid 2px;
+    padding: 5px;
+    margin: 10px;
+    
+}
+
+#Bdiv{
+    background-color: grey;
+    border: black solid 2px;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+#Cdiv{
+    background-color: dodgerblue;
+    border: black solid 2px;
+    padding: 5px;
+    margin: 10px;
+}
+
+#Ddiv{
+    background-color: violet;
+    border: black solid 2px;
+    padding: 5px;
+    margin: 10px;
+}
+
+li{
+    width: 20px;
+    height: 25px;
+    background-color: tan;
+    border: black solid 2px;
+    padding-left: 5px;
+    padding-right: 30px;
+    margin: 5px;
+}
+
+li:hover{
+    background-color: purple;
+}
+
+ul{
+   list-style-type: none; 
+}
+
+#MyTitle{
+    background-color: brown;
+    border: black solid 2px;
+    padding: 5px;
+    margin: 10px;
+}
+
+#MyFoot{
+    background-color: brown;
+    border: black solid 2px;
+    padding: 5px;
+    margin: 10px;
+}
+
+/* Desktop */
+@media screen and (max-width: 2000px) {
+    #Adiv {float: left;}
+    #Bdiv {float: left;}
+    #Cdiv {float: left;}
+    #Ddiv {float: left;}
+
+}
